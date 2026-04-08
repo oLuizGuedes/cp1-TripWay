@@ -2,6 +2,10 @@
 
 Este projeto consiste no desenvolvimento de uma página web para uma agência de viagens, apresentando pacotes turísticos para destinos internacionais.
 
+# links
+https://github.com/oLuizGuedes/cp1-TripWay
+https://github.com/oLuizGuedes/cp1-TripWay.git
+
 ## ✈️ Destinos disponíveis
 
 - Ottawa (Canadá)
