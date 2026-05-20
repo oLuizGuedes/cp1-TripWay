@@ -5,52 +5,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <title>TripWay</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>TripWay | Home</title>
 </head>
-<body style="font-family: poppins;">
+
+<body>
 
     <nav>
-        <a href="/index.html">TripWay</a>
+        <a class="logo" href="index.html">
+            ✈️ TripWay
+        </a>
 
-        <ul>
-            <li><a href="pages/destinos.html">Destinos</a></li>
-            <li><a href="pages/pacotes.html">Pacotes</a></li>
-            <li><a href="pages/formulario.html">Formulário</a></li>
+        <ul class="nav-links">
+            <li>
+                <a class="nav-link" href="pages/destinos.html">
+                    Destinos
+                </a>
+            </li>
+
+            <li>
+                <a class="nav-link" href="pages/pacotes.html">
+                    Pacotes
+                </a>
+            </li>
+
+            <li>
+                <a class="nav-link" href="pages/formulario.html">
+                    Formulário
+                </a>
+            </li>
         </ul>
     </nav>
 
-    <header>
-        <h1>Bem-vindo ao TripWay</h1>
-        <p>Descubra o mundo com quem entende de viagens ✈️🌍</p>
-        <p>Na nossa agência, transformamos sonhos em experiências inesquecíveis. Oferecemos pacotes personalizados, destinos incríveis e suporte completo em cada etapa da sua jornada — do planejamento ao retorno.
+    <header class="header-container">
 
-        Seja para relaxar em praias paradisíacas, explorar cidades históricas ou viver aventuras únicas, cuidamos de tudo para que você aproveite ao máximo, com conforto, segurança e economia.
+        <div class="header-content">
+            <h1>
+                Bem-vindo ao <span>TripWay</span>
+            </h1>
 
-        Aqui, cada viagem é pensada especialmente para você. Porque mais do que vender destinos, criamos memórias que duram para sempre.</p>
-        <img src="images/home.jpg" alt="Viagem incrível" width="100%">
+            <p>
+                Descubra o mundo com quem entende de viagens ✈️🌍
+            </p>
+
+            <p>
+                Na nossa agência, transformamos sonhos em experiências inesquecíveis.
+                Oferecemos pacotes personalizados, destinos incríveis e suporte
+                completo em cada etapa da sua jornada.
+            </p>
+
+            <a class="btn" href="pages/destinos.html">
+                Conheça nossos destinos
+            </a>
+        </div>
+
+        <img
+            src="images/home.jpg"
+            alt="Imagem de viagem incrível"
+            class="banner-image"
+        >
 
     </header>
 
-
     <main>
-        <section>
-            <a href="pages/destinos.html">
-                <h3>Seus Destinos</h3>
-                <p>Escolha o Melhor Destino Para Você.</p>
+
+        <section class="cards-section">
+
+            <a class="card" href="pages/destinos.html">
+                <h3>Destinos</h3>
+
+                <p>
+                    Escolha o melhor destino para sua próxima aventura.
+                </p>
             </a>
 
-            <a href="pages/pacotes.html">
-                <h3>Escolha Seu Pacotes</h3>
-                <p>Os Melhores Pacotes Para Você.</p>
+            <a class="card" href="pages/pacotes.html">
+                <h3>Pacotes</h3>
+
+                <p>
+                    Conheça nossos pacotes exclusivos de viagem.
+                </p>
             </a>
 
-            <a href="pages/formulario.html">
+            <a class="card" href="pages/formulario.html">
                 <h3>Formulário</h3>
-                <p>Preencha o Nosso Formulário.</p>
+
+                <p>
+                    Preencha o formulário e solicite seu orçamento.
+                </p>
             </a>
+
         </section>
+
     </main>
-    
+
 </body>
 </html>
