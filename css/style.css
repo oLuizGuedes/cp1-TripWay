@@ -224,7 +224,8 @@ nav {
         max-width: 700px;
 
         margin: 0 auto;
-}
+    }
+    
     .form-container {
     background-color: white;
 
@@ -233,11 +234,34 @@ nav {
     border-radius: 10px;
 
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
+    }
 
     form {
         display: flex;
         flex-direction: column;
         gap: 1rem;
+    }
+
+    .form-group {
+    display: flex;
+    flex-direction: column;
+
+    gap: 0.5rem;
+    }
+
+    .form-group label {
+        font-weight: 500;
+    }
+
+    input,
+    select,
+    textarea {
+        padding: 0.8rem;
+
+        border: 1px solid #ccc;
+
+        border-radius: 8px;
+
+        font-family: inherit;
 }
 }
