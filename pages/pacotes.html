@@ -3,44 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/style.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
-    <title>Pacotes</title>
-</head>
-<body style="font-family: poppins;">
 
-    <a href="../index.html"><h2>Voltar</h2></a>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>TripWay | Pacotes</title>
+</head>
+
+<body>
 
     <nav>
-        
-        <a href="/index.html"><h2>TripWay</h2></a>
 
-        <ul>
-            <li><a href="destinos.html">Destinos</a></li>
-            <li><a href="formulario.html">Pacotes</a></li>
-            <li><a href="pacotes.html">Formulário</a></li>
+        <a class="logo" href="../index.html">
+            TripWay
+        </a>
+
+        <ul class="nav-links">
+            <li><a class="nav-link" href="destinos.html">Destinos</a></li>
+            <li><a class="nav-link" href="pacotes.html">Pacotes</a></li>
+            <li><a class="nav-link" href="formulario.html">Formulário</a></li>
         </ul>
 
     </nav>
 
-    <header><h1>Serviços</h1>
-    <p>Serviços disponiveis</p></header>
+    <header class="page-header">
+
+        <h1>Pacotes e Serviços</h1>
+
+        <p>
+            Conheça os serviços disponíveis para tornar sua viagem inesquecível.
+        </p>
+
+    </header>
 
     <main>
 
-    <section>
+        <section class="cards-section">
 
-        <ul>
-        <li><h2>Hospedagem: Descubra hotéis e acomodações confortáveis em destinos ao redor do mundo.</h2><img src="../images/hotel-bagagem.jpg" alt=""></li>
-        <li><h2>Roteiros personalizados: Planeje viagens com itinerários sob medida para seu estilo e orçamento.</h2><img src="../images/roteiro.jpg" alt=""></li>
-        <li><h2>Seguro viagem: Proteção durante sua viagem internacional contra imprevistos médicos, atrasos e emergências.</h2><img src="../images/seguro.png" alt=""></li>
-        </ul>
+            <div class="card">
 
-    </section>
+                <img src="../images/hotel-bagagem.jpg" alt="Hospedagem">
+
+                <h3>Hospedagem Premium</h3>
+
+                <p>
+                    Descubra hotéis e acomodações confortáveis em destinos ao redor do mundo.
+                </p>
+
+                <p><strong>R$ 3.999</strong></p>
+
+                <a class="btn" href="#">
+                    Contratar
+                </a>
+
+            </div>
+
+            <div class="card">
+
+                <img src="../images/roteiro.jpg" alt="Roteiro">
+
+                <h3>Roteiro Personalizado</h3>
+
+                <p>
+                    Planeje viagens com itinerários feitos sob medida para seu estilo.
+                </p>
+
+                <p><strong>R$ 2.499</strong></p>
+
+                <a class="btn" href="#">
+                    Contratar
+                </a>
+
+            </div>
+
+            <div class="card">
+
+                <img src="../images/seguro.png" alt="Seguro Viagem">
+
+                <h3>Seguro Viagem</h3>
+
+                <p>
+                    Proteção durante sua viagem contra imprevistos e emergências.
+                </p>
+
+                <p><strong>R$ 799</strong></p>
+
+                <a class="btn" href="#">
+                    Contratar
+                </a>
+
+            </div>
+
+        </section>
 
     </main>
-    
+
 </body>
 </html>
