@@ -18,43 +18,70 @@ body {
     color: var(--text-color);
 }
 
+/* NAVBAR */
+
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     padding: 1rem 5%;
+
     background-color: white;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    text-decoration: none;
+
+    font-size: 1.5rem;
+    font-weight: 600;
+
+    color: var(--primary-color);
 }
 
 .nav-links {
     display: flex;
     gap: 1.5rem;
+
     list-style: none;
 }
 
 .nav-link {
     text-decoration: none;
     color: var(--secondary-color);
+
+    transition: 0.3s;
 }
 
 .nav-link:hover {
     color: var(--primary-color);
 }
 
+/* BOTÕES */
+
 .btn {
+    display: inline-block;
+
     padding: 0.8rem 1rem;
+
     background-color: var(--primary-color);
+
     color: white;
+
     text-decoration: none;
+
     border-radius: 8px;
+
+    transition: 0.3s;
 }
 
-.card {
-    background-color: var(--card-color);
-    padding: 1.5rem;
-    border-radius: 10px;
+.btn:hover {
+    opacity: 0.9;
 }
+
+/* HEADER HOME */
 
 .header-container {
     display: flex;
@@ -72,6 +99,7 @@ nav {
 
 .header-content h1 {
     font-size: 3rem;
+
     margin-bottom: 1rem;
 }
 
@@ -81,24 +109,30 @@ nav {
 
 .header-content p {
     margin-bottom: 1rem;
+
     line-height: 1.6;
 }
 
 .banner-image {
     width: 45%;
+
     border-radius: 10px;
 }
+
+/* CARDS */
 
 .cards-section {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+
     gap: 2rem;
 
     padding: 3rem 5%;
 }
 
 .card {
-    background-color: white;
+    background-color: var(--card-color);
 
     width: 300px;
 
@@ -109,7 +143,7 @@ nav {
     text-decoration: none;
     color: var(--text-color);
 
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 
     transition: 0.3s;
 }
@@ -118,7 +152,70 @@ nav {
     transform: translateY(-5px);
 }
 
+.card img {
+    width: 100%;
+
+    border-radius: 10px;
+
+    margin-bottom: 1rem;
+}
+
 .card h3 {
     margin-bottom: 1rem;
+
     color: var(--primary-color);
+}
+
+.card p {
+    margin-bottom: 1rem;
+
+    line-height: 1.5;
+}
+
+/* HEADER DAS PÁGINAS */
+
+.page-header {
+    text-align: center;
+
+    padding: 3rem 5%;
+}
+
+.page-header h1 {
+    font-size: 2.5rem;
+
+    margin-bottom: 1rem;
+}
+
+.page-header p {
+    color: var(--secondary-color);
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+
+        gap: 1rem;
+    }
+
+    .header-container {
+        flex-direction: column;
+    }
+
+    .header-content {
+        width: 100%;
+
+        text-align: center;
+    }
+
+    .banner-image {
+        width: 100%;
+    }
+
+    .cards-section {
+        flex-direction: column;
+        align-items: center;
+    }
 }
