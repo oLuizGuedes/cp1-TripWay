@@ -263,5 +263,11 @@ nav {
         border-radius: 8px;
 
         font-family: inherit;
+    }
+    
+    textarea {
+        resize: none;
+
+        height: 120px;
 }
 }
